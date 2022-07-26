@@ -10,6 +10,11 @@ public class Length extends Conversion {
             new Unit("Meter", "m", 1.0d),
             new Unit("Kilometer", "km", 1000.0d),
             new Unit("Light Year", "LY", 9460660000000000.0d),
+
+            new Unit("Inches", "in", 0.0254d),
+            new Unit("Feet", "ft", 0.3048d),
+            new Unit("Yard", "yd", 0.9144d),
+            new Unit("Mile", "mi", 1609.34d),
     };
 
     @Override
