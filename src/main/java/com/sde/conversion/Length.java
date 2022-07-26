@@ -2,10 +2,14 @@ package com.sde.conversion;
 
 public class Length extends Conversion {
 
-    private final Unit[] units = new Unit[] {
-        new Unit("Millimeter", "mm", 0.001),
-        new Unit("Meter", "m", 1),
-        new Unit("Kilometer", "km", 1000),
+    private final Unit[] units = new Unit[]{
+            new Unit("Nanometer", "nm", 0.000000001d),
+            new Unit("Micrometer", "um", 0.000001d),
+            new Unit("Millimeter", "mm", 0.001d),
+            new Unit("Centimeter", "cm", 0.01d),
+            new Unit("Meter", "m", 1.0d),
+            new Unit("Kilometer", "km", 1000.0d),
+            new Unit("Light Year", "LY", 9460660000000000.0d),
     };
 
     @Override
