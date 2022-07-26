@@ -10,4 +10,12 @@
     <servlet-name>length</servlet-name>
     <url-pattern>/convert/length</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <servlet-name>temperature</servlet-name>
+    <servlet-class>com.sde.conversion.Temperature</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>temperature</servlet-name>
+    <url-pattern>/convert/temperature</url-pattern>
+  </servlet-mapping>
 </web-app>
