@@ -15,6 +15,7 @@ public abstract class Conversion extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        setAccessControlHeaders(response);
         final String responseBody;
         if (request.getParameterMap().isEmpty()) {
             responseBody = unitsAsJson();
@@ -55,4 +56,8 @@ public abstract class Conversion extends HttpServlet {
         return "{\"value\":\"" + value + "\",\"unit\":\"" + req.getParameter("to") + "\"}";
     }
 
+    private void setAccessControlHeaders(HttpServletResponse response) {
+      response.setHeader("Access-Control-Allow-Origin", "http://localhost:8080");
+      response.setHeader("Access-Control-Allow-Methods", "GET");
+    }
 }
